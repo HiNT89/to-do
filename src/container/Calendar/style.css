@@ -1,0 +1,14 @@
+.active {
+  animation: dropDown 2s 1 backwards;
+}
+/* .close {
+  animation: dropUp 2s 1 forwards;
+} */
+@keyframes dropDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

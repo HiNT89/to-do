@@ -1,0 +1,77 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  > div {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+  }
+}
+.box_modal {
+  position: absolute;
+  width: 50%;
+  height: 30vh;
+  bottom: 50%;
+  left: 25%;
+  background: #fff;
+  color: #fff;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px 0px;
+  border-radius: 8px;
+}
+.box_modal_top {
+  display: flex;
+  width: 100%;
+  padding: 4px;
+  .left {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    font-size: 2.5rem;
+  }
+}
+.box_modal_input {
+  flex-grow: 1;
+  text-transform: capitalize;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  &:focus {
+    outline: none;
+  }
+}
+.box_modal .box_modal_btns {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 0px 10px;
+}
+.box_modal .box_modal_btn {
+  padding: 4px 8px;
+  max-width: 40%;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .box_modal {
+    height: 20vh;
+    width: 70%;
+    left: 15%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .box_modal {
+    height: 25vh;
+    width: 90%;
+    left: 5%;
+  }
+}

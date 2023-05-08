@@ -1,0 +1,22 @@
+.btn_show > svg {
+  animation: showComplete linear 1 0.3s forwards;
+}
+.btn_show_NA > svg {
+  animation: notShowComplete linear 1 0.3s forwards;
+}
+@keyframes showComplete {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes notShowComplete {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
